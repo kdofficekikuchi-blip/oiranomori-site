@@ -1,0 +1,227 @@
+<!-- =========================================================
+     OIRANOMORI CAMP WEBSITE
+
+     Page
+     ・トップページ
+
+     Purpose
+     ・キャンプ場の世界観を伝えるLP構成
+     ・Hero → 魅力 → お知らせ → CTA の導線
+
+     Sections
+     1. Header
+     2. Hero
+     3. News / Notice
+     4. Features
+     5. Reservation CTA
+     6. Footer
+
+     Notes
+     ・画像は /public 配下
+     ・リンクは一部プレースホルダー (#)
+     ・スタイルは style.css に集約
+
+     ========================================================= -->
+
+
+---
+import "../style.css";
+---
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>おいらの森 | 森と暮らすキャンプ</title>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-text">おいらの森</span>
+      </div>
+
+      <!-- Display-only navigation chips -->
+      <nav class="top-nav" aria-label="forest type">
+        <button class="chip is-active" type="button">ライトフォレスト</button>
+        <button class="chip" type="button">ディープフォレスト</button>
+      </nav>
+
+      <div class="header-right">
+        <!-- Temporary weather label -->
+        <span class="temp">※ 15.2°C</span>
+
+        <button class="icon-btn" type="button" aria-label="menu">
+          <span class="icon-lines"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-label="hero">
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <p class="hero-eyebrow">OIRANOMORI CAMP</p>
+      <h1 class="hero-title">おいらの森で、<br>森と暮らすキャンプを。</h1>
+
+      <p class="hero-lead">
+        栃木県那須烏山市の自然を活かしたキャンプ場。<br>
+        明るいライトフォレストと静寂のディープフォレスト。2つの森で焚き火と余白の時間を楽しめます。
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="#reserve">予約する</a>
+        <a class="btn ghost" href="#features">森の魅力を見る</a>
+      </div>
+    </div>
+
+    <!-- Hero supplementary cards -->
+    <div class="hero-bottom" aria-hidden="true">
+      <div class="container hero-bottom-inner">
+        <div class="mini-card">
+          <div class="mini-title">コンセプト</div>
+          <div class="mini-text">森と暮らすように過ごす、静かな週末。</div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-title">施設案内</div>
+          <div class="mini-text">フィールド・設備・レンタル情報はこちら。</div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-title">アクセス</div>
+          <div class="mini-text">東京から車で約2時間。里山の入口へ。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- News / Notice Section -->
+    <section class="section section-light" id="news">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">お知らせ</h2>
+            <p class="section-sub">最新情報を更新しています。</p>
+          </div>
+          <a class="section-link" href="#news">一覧 →</a>
+        </div>
+
+        <div class="notice-card">
+          <div class="notice-row">
+            <time class="notice-date" datetime="2026-01-26">2026-01-26</time>
+            <span class="badge">お知らせ</span>
+            <div class="notice-text">おいらの森は那須烏山パークへ… フォレストパークおいらの森は、里山パーク…</div>
+          </div>
+
+          <div class="notice-row">
+            <time class="notice-date" datetime="2026-01-17">2026-01-17</time>
+            <span class="badge">お知らせ</span>
+            <div class="notice-text">リニューアル準備中　リニューアル準備中</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section-dark" id="features">
+      <div class="container">
+        <h2 class="section-title dark">おいらの森の魅力</h2>
+        <p class="section-sub dark">“帰ってきたくなる森”の理由を、3つだけ。</p>
+
+        <div class="cards">
+          <article class="feature-card">
+            <div class="thumb">
+              <img src="/feature-1.jpg" alt="ライトフォレストの風景" loading="lazy">
+            </div>
+            <h3 class="card-title">ライトフォレスト</h3>
+            <p class="card-text">初めてでも安心して楽しめる森。やさしい光と広い余白。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="thumb">
+              <img src="/feature-2.jpg" alt="ディープフォレストの風景" loading="lazy">
+            </div>
+            <h3 class="card-title">ディープフォレスト</h3>
+            <p class="card-text">静けさの中で深く集中する森。夜の焚き火が一番似合う。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="thumb">
+              <img src="/feature-3.jpg" alt="おいらの森の薪" loading="lazy">
+            </div>
+            <h3 class="card-title">おいらの薪</h3>
+            <p class="card-text">森で暮らすように過ごす週末。深呼吸から始めよう。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation CTA Section -->
+    <section class="section section-mid" id="reserve">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text">
+            <h2 class="cta-title">次の週末、森へ行こう。</h2>
+            <p class="cta-sub">
+              空き状況の確認・料金・設備詳細は予約ページから。<br>
+              はじめての方でも安心して利用できるよう、最新情報を随時更新しています。
+            </p>
+          </div>
+
+          <a class="btn primary large" href="#reserve">予約ページへ進む</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <span class="brand-text">おいらの森</span>
+        </div>
+        <p class="footer-desc">栃木県那須烏山市にある100年の森作りを体験するキャンプ場</p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">メニュー</div>
+        <a href="#reserve" class="footer-link">予約・料金</a>
+        <a href="#features" class="footer-link">フィールド案内</a>
+        <a href="#news" class="footer-link">アクセス</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">サポート</div>
+        <!-- Temporary placeholder links -->
+        <a href="#" class="footer-link">お問い合わせ</a>
+        <a href="#" class="footer-link">利用規約</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">SNS</div>
+        <!-- Temporary placeholder links -->
+        <a href="#" class="footer-link">Instagram</a>
+        <a href="#" class="footer-link">Facebook</a>
+        <a href="#" class="footer-link">Note</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© 2026 おいらの森 / Forest. All rights reserved.</small>
+    </div>
+  </footer>
+
+</body>
+</html>
